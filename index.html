@@ -14,7 +14,7 @@
     html, body { width:100%; height:100%; background:var(--ink); overflow:hidden; }
     body { padding:10px; }
 
-    .hero { display:flex; width:calc(100vw - 20px); height:calc(100vh - 20px); gap:10px; }
+    .hero { display:flex; width:calc(100vw - 20px); height:calc(100vh - 20px); height:calc(100dvh - 20px); gap:10px; }
 
     /* LEFT */
     .hero__left { position:relative; flex:1; border-radius:var(--r); overflow:hidden; }
@@ -98,7 +98,7 @@
     @media (max-width: 700px) {
       html, body { overflow: hidden; height: 100%; }
       body { padding: 8px; }
-      .hero { flex-direction: column; width: calc(100vw - 16px); height: calc(100vh - 16px); gap: 8px; }
+      .hero { flex-direction: column; width: calc(100vw - 16px); height: calc(100vh - 16px); height: calc(100dvh - 16px); gap: 8px; }
       .hero__left { flex: 7; min-height: 0; }
       .hero__right { flex: 3; min-height: 0; width: 100%; flex-direction: row; gap: 8px; }
       .panel__label { font-size: 9px; bottom: 10px; right: 12px; }
