@@ -112,11 +112,21 @@
       .hero__social { bottom: 36px; right: 20px; gap: 14px; }
     }
 
-    @media (max-width: 420px) {
-      .nav__links a { padding: 5px 7px; font-size: 9px; }
-      .nav__logo { font-size: 14px; }
+    @media (max-width: 480px) {
+      /* Nav: masquer les liens pour éviter le dépassement sur écrans étroits */
+      .nav__sep,
+      .nav__links { display: none; }
+      .nav { padding: 8px 14px; gap: 4px; }
+      .nav__logo { font-size: 15px; letter-spacing: .2em; }
+
+      /* Panneaux droits */
       .hero__right { height: 100px; }
-      .hero__headline h1 { font-size: clamp(38px, 14vw, 56px); }
+      .panel__label { font-size: 7px; letter-spacing: .04em; bottom: 8px; right: 8px; gap: 4px; }
+
+      /* Headline + icônes sociales : séparer verticalement pour éviter le chevauchement */
+      .hero__headline { bottom: 52px; left: 20px; }
+      .hero__headline h1 { font-size: clamp(34px, 11vw, 50px); }
+      .hero__social { bottom: 14px; right: 16px; gap: 12px; }
     }
   </style>
 </head>
